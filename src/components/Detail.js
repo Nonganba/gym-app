@@ -49,8 +49,8 @@ const Detail = ({ exerciseDetail }) => {
           help you improve your mood and gain energy.
         </Typography>
 
-        {extraDetail.map((item) => (
-          <Stack key={item.name} direction="row" gap="24px" alignItems="center">
+        {extraDetail.map((item, index) => (
+          <Stack key={index} direction="row" gap="24px" alignItems="center">
             <Button
               sx={{
                 background: "#fff2db",

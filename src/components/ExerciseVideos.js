@@ -11,6 +11,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
       sx={{
         mt: { lg: "200px", xs: "20px" },
         p: "20px",
+        mb: {xs: '100px', lg: '0'}
       }}
     >
       <Typography variant="h4" marginBottom="33px">

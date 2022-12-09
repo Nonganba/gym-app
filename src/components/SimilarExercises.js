@@ -4,7 +4,6 @@ import HorizontalScrollbar from "./HorizontalScrollbar";
 import Loader from "./Loader";
 
 const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
-  console.log(targetMuscleExercises);
   return (
     <Box
       sx={{
@@ -12,7 +11,11 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
       }}
     >
       <Typography variant="h4" mb={5}>
-        Exercises that target the same muscle group
+        Similar{" "}
+        <span style={{ color: "#ff2625", textTransform: "capitalize" }}>
+          Target Muscle
+        </span>{" "}
+        Exercises
       </Typography>
 
       <Stack
@@ -30,7 +33,12 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
       </Stack>
 
       <Typography variant="h4" mb={5}>
-        Exercises that use the same equipment
+        Similar
+        <span style={{ color: "#ff2625", textTransform: "capitalize" }}>
+          {" "}
+          Equipment
+        </span>{" "}
+        Exercises
       </Typography>
 
       <Stack
